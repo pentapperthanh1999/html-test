@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-gray {
+    color: $gray-color;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: $black-color;
+}
+
+.text-blue {
+    color: $text-blue-color;
+}
+
+.bg-gray {
+    background: rgba(28, 45, 123, 0.07);
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.border-top {
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.09);
+}
+
+.box-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .box-white {
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .box-content-small {
+        padding: 30px;
+        text-align: left;
+    }
+}
+
+
+.box-list {
+    padding-top: 30px;
+    .option {
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px;
+            i {
+                color: $blue-color;
+                font-size: 20px;
+            }
+
+            .text {
+                margin: 0;
+                line-height: 1;
+            }
+        }
+    }
+    &-sub {
+        margin: 20px 0;
+    }
+}
+
+.box-text {
+    padding: 40px 0;
+}
+
+.box-header {
+    text-align: center;
+    padding: 50px;
+    .sub-heading {
+        color: $blue-color;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+.key-element {
+    padding: 10px 20px;
+    text-align: center;
+    background: $blue-color;
+    
+    h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+}
+.key-list.box-list {
+    .option {
+        &-item {
+            align-items: flex-start;
+            gap: 30px;
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.our-favorite {
+    .box-content {
+        padding: 0;
+        .box-list {
+            padding: 0;
+            .option {
+                &-item {
+                    align-items: flex-start;
+                    gap: 30px;
+                    .text {
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+
+}

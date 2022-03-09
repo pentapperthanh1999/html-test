@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="title">Good Vibes Form</h2>
+        
+        <div class="vertical-container mg-tb-50">
+            <div class="form-control">
+                <h2 class="form-heading">Tell us something positive that happened to you today.</h2>
+                <form action="#" id="form" class="form">
+                    <div class="row form-group align-center">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="name" class="">Name</label>
+                        </div>
+                        <div class="column md-2">
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="row form-group align-center">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="email" class="">Email</label>
+                        </div>
+                        <div class="column md-2">
+                            <input type="text" id="email" name="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+                    <div class="row form-group align-center">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="number-between">On a scale of 1-10, how good was it?</label>
+                        </div>
+                        <div class="column md-2">
+                            <input type="number" min="1" max="10" value="1" id="number-between" name="number-between" placeholder="Enter a number between 1 and 10">
+                        </div>
+                    </div>
+                    <div class="row form-group align-center">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="number-between">Where did it happen?</label>
+                        </div>
+                        <div class="column md-2">
+                            <select name="cars" id="cars">
+                                <option value="volvo">At home</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="number-between">At what time of day did it happen?</label>
+                        </div>
+                        <div class="column md-2">
+                            <div class="mg-bt-10">
+                                <input type="radio" id="morning" name="day" value="morning" checked />
+                                <label for="morning">Morning</label>
+                            </div>
+                            <div class="mg-bt-10">
+                                <input type="radio" id="afternoon" name="day" value="afternoon" />
+                                <label for="afternoon">Afternoon</label>
+                            </div>
+                            <div class="mg-bt-10">
+                                <input type="radio" id="evening" name="day" value="evening" />
+                                <label for="evening">Evening</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="number-between">What emotions did you experience?(Select all that apply)</label>
+                        </div>
+                        <div class="column md-2">
+                            <div class="mg-bt-10">
+                                <input type="checkbox" id="exited" name="exited" value="exited" />
+                                <label for="evening">Exited</label>
+                            </div>
+                            <div class="mg-bt-10">
+                                <input type="checkbox" id="humbled" name="humbled" value="humbled" />
+                                <label for="humbled">Humbled</label>
+                            </div>
+                            <div class="mg-bt-10">
+                                <input type="checkbox" id="loved" name="loved" value="loved" />
+                                <label for="loved">Loved</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="column md-2 offset-1 text-right">
+                            <label for="text-area">Please decribe your positive experience.</label>
+                        </div>
+                        <div class="column md-2">
+                            <textarea name="text-area" id="text-area" cols="20" rows="5" placeholder="Enter your experience here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

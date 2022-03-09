@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #fff;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 50px;
+}
+
+.parallax .content {
+    text-align: center;
+}
+
+.parallax .content .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.parallax .content .sub-title {
+    color: red;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.parallax .content p {
+    margin-bottom: 15px;
+    opacity: .5;
+}
+
+.parallax .content .social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.parallax .content .social li {
+    padding: 10px 20px;
+    position: relative;
+    -webkit-transition:all 1s ease;
+       -moz-transition:all 1s ease;
+        -ms-transition:all 1s ease;
+         -o-transition:all 1s ease;
+            transition:all 1s ease;
+}
+
+.parallax .content .social li:hover  {
+    color: red;
+    transform: translateY(10px);
+}
+
+.parallax .content .social li a {
+    color: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.parallax .content .social li a i {
+    font-size: 20px;
+}
+
+.parallax:first-child {
+    background-image: linear-gradient(62deg, #3A3D40 0%, #181719 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
+}
+
+.parallax-second {
+    background-color: rgb(56, 44, 161);
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax:nth-child(3) {
+    background-color: rgb(69, 69, 85);
+}
+
+.content-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.heading a {
+    color: inherit;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project .project-item {
+    background: rgb(49, 54, 71);
+}
+
+.project .project-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project .project-item .project-content {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.project .project-item .project-content .project-title {
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3;
+}
+
+.project .project-item .project-content .project-title span {
+    color: orange;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.project .project-item .project-content .project-title:hover >  span {
+    visibility: visible;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 30px 0;
+    background-color: rgb(172, 31, 31);
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.btn:hover {
+    color: #181719;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .parallax {
+        height: 100%;
+    }
+}

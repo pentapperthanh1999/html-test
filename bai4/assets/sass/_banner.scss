@@ -1,0 +1,51 @@
+.banner {
+    padding: 50px 0;
+    &-content {
+        .title {
+            color: rgb(33, 44, 93);
+            font-size: 24px;
+            line-height: 1.063em;
+            letter-spacing: 0px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        .heading {
+            color: rgb(33, 44, 93);
+            font-size: 80px;
+            line-height: 96px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 20px;
+
+        .text {
+            color: rgb(74, 82, 119);
+            font-size: 22px;
+            line-height: 1.7em;
+            letter-spacing: 0px;
+            font-weight: 400;
+            text-align: left;
+            margin-bottom: 20px;
+            }
+        }
+
+        .day {
+            color: rgba(74, 82, 119, 0.7);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 470px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 30px;
+
+        }
+    }
+}

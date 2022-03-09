@@ -1,0 +1,37 @@
+.footer {
+    padding: 50px 0;
+    &-menu {
+        &-item {
+            .text {
+                font-size: 16px;
+                color: rgb(144, 155, 166);
+                transition: all 0.3s;
+                line-height: 24px;
+            }
+            &:hover {
+                a {
+                    color: #111;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &-copy-right {
+        text-align: center;
+        .text {
+            font-size: 16px;
+            color: rgb(144, 155, 166);
+            a {
+                color: inherit;
+                padding-bottom: 2px;
+                border-bottom: 2px solid $blue-color;
+                line-height: 24px;
+                transition: all 0.3s;
+                &:hover {
+                    background: $blue-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
